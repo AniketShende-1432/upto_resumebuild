@@ -102,3 +102,124 @@
     }
   }
 }
+.box-container{
+  display:flex;
+  justify-content: space-between;
+  padding-top:32px;
+  padding-bottom: 24px;
+  padding-right: 40px;
+  font-family: Arial;
+  gap:34px;
+}
+.box{
+  padding:24px;
+  border-radius: 8px;
+  background-color: rgb(244, 245, 247);
+  display:flex;
+  flex-direction: column;
+}
+.content{
+  > h4{
+    color:#172B4D;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  >p{
+    color:#172B4D;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  > button{
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color:black;
+    border: 1px solid rgb(179, 186, 197);
+    outline:0px;
+    border-radius: 4px;
+    padding:8px 22px;
+    width:100%;
+  }
+}
+.Create-container{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:unset;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family: Arial;
+}
+.create-box{
+  opacity: 1;
+  width:630px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  flex-direction: column;
+  position:absolute;
+  top:8%;
+  left:20%;
+  padding: 14px 40px 34px;
+}
+.cross button{
+  outline:0px;
+  border:0px;
+  background-color: #FFFFFF;
+  font-size: 18px;
+  color: gray;
+  margin-left:104vh;
+  cursor: pointer;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  > h3{
+    margin:0px;
+    margin-bottom: 10px;
+    color:#31445A
+  }
+  > h4{
+    margin:0px;
+    color:#5E6C84;
+    font-weight: lighter;
+    font-size:14px;
+  }
+}
+.head-content{
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+  padding:15px 30px 10px 35px;
+}
+.cont1{
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid rgb(223, 225, 230);
+  background-color: rgb(255, 255, 255);
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+  > button{
+    outline:0px;
+    border:0px;
+    background-color: #FFFFFF;
+    font-size:18px;
+    position:absolute;
+    right:95px;
+  }
+}
+.line-c1{
+  color: rgb(23, 43, 77);
+  font-size: 16px;
+  font-weight: 600;
+}
+.line-c2{
+  color: rgb(94, 108, 132);
+  font-size: 14px;
+  font-weight: 400;
+}
