@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 function App() {
@@ -9,6 +10,17 @@ function App() {
   const closeForm = () => {
     setBox(false);
   };
+  useEffect(() => {
+    if (Box) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [Box]);
   return (
    <div className='main'>
     <div className="container">
